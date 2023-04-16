@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nunit.tests", "nunit.tests\nunit.tests.csproj", "{55ABB50E-8854-4BE2-9B19-E3CA7363F744}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nunit.runner", "nunit.runner\nunit.runner.csproj", "{35B388BA-9741-4B0B-85A0-09023882FA4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55ABB50E-8854-4BE2-9B19-E3CA7363F744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55ABB50E-8854-4BE2-9B19-E3CA7363F744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55ABB50E-8854-4BE2-9B19-E3CA7363F744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55ABB50E-8854-4BE2-9B19-E3CA7363F744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35B388BA-9741-4B0B-85A0-09023882FA4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35B388BA-9741-4B0B-85A0-09023882FA4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35B388BA-9741-4B0B-85A0-09023882FA4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35B388BA-9741-4B0B-85A0-09023882FA4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
