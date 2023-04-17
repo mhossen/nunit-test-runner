@@ -13,25 +13,23 @@ foreach (var testName in TestAssemblyReference.TestNames)
   builder?.AddTest(testName);
 }
 
+/*
+ * manually set test name and/or filter but category to run by test name(s) or category
+ * builder?.SelectWhere("cat == ui");
+ * builder?.SelectWhere("test =~ AmazonTest || test=~ GoogleTest");
+ */
 
-// builder?.AddTest("nunit.tests.ChromeTests.AnotherGoogleTest");
-// builder?.SelectWhere("cat == ui");
-// builder?.SelectWhere("test =~ AmazonTest || test=~ GoogleTest");
 var runner = engine.GetRunner(package);
-// engine.Services.GetService<SettingsService>().
 var filters = builder?.GetFilter();
-
 
 var testResult = runner.Run(listener: null, new TestFilter(filters?.Text));
 
 var testCount = runner.CountTestCases(TestFilter.Empty);
 Console.WriteLine($"Total test count: {testCount}");
 var explore = runner.Explore(new TestFilter(filters?.Text));
-// Console.WriteLine(explore.OuterXml);
 Console.WriteLine("=====================================>");
 Console.WriteLine(filters?.Text);
 Console.WriteLine(testResult.OuterXml);
-
 
 Console.WriteLine("=====================================>");
 Console.WriteLine("=====================================>");
